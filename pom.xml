@@ -4,6 +4,11 @@
   <artifactId>lucee-debug</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+  <properties>
+  	<lucee.project.version>5.0.0.153-SNAPSHOT</lucee.project.version>
+  </properties>
+  
   <build>
     <plugins>
       <plugin>
@@ -27,7 +32,7 @@
   	<dependency>
   		<groupId>org.lucee</groupId>
   		<artifactId>lucee</artifactId>
-  		<version>5.0.0.153-SNAPSHOT</version>
+  		<version>${lucee.project.version}</version>
   		<exclusions>
   			<exclusion>
   				<artifactId>activation</artifactId>
