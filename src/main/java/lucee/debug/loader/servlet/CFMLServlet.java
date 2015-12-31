@@ -16,6 +16,6 @@ public final class CFMLServlet extends LuceeDebugServlet  {
 
 	@Override
     protected void service( HttpServletRequest req, HttpServletResponse rsp ) throws ServletException, IOException {
-    	engine.serviceCFML( this, req, rsp );
+    	engine.service( this, req, rsp );
     }
 }
