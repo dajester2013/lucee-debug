@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>lucee-debug-complicated</display-name>
+  <welcome-file-list>
+    <welcome-file>index.cfm</welcome-file>
+    <welcome-file>index.lucee</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>CFMLServlet</display-name>
+    <servlet-name>CFMLServlet</servlet-name>
+    <servlet-class>lucee.debug.loader.servlet.CFMLServlet</servlet-class>
+    <init-param>
+    	<param-name>lucee-server-directory</param-name>
+    	<param-value>src/main/webapp/WEB-INF</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CFMLServlet</servlet-name>
+    <url-pattern>*.cfm</url-pattern>
+    <url-pattern>*.cfc</url-pattern>
+    <url-pattern>*.cfml</url-pattern>
+    <url-pattern>*.lucee</url-pattern>
+  </servlet-mapping>
+</web-app>
