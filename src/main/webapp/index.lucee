@@ -1,5 +1,1 @@
-asdf
-<:output>#now()#</:output>
-<cfdump var="#getpagecontext().getRequestDialect()#" />
-<cfdump var="#getpagecontext().getCurrentPageSource().getDialect()#" />
-
+<:dump eval="server" />
