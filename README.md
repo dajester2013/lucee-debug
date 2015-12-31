@@ -42,7 +42,7 @@ Tomcat is a bit more setup, but it deploys your code outside the project folder 
   * Right click on the lucee-debug project in the Project Explorer, and select *Properties*.
   * Select *Deployment Assembly* from the navigation on the properties dialog.
   * Click the *Add* button, and select *Project* from the list.  Click *Next*
-  * Select `core` project from the list - the core and loader projects must remain open in order to run the debug app
+  * Select `core` project from the list (the `loader` project should already be added, but if not select it as well) - the core and loader projects must remain open in order to run the debug app
   
 * **Step 3b:**
   * Right-click on the `lucee-debug` project and click *Debug As > Run on Server*
