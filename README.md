@@ -27,14 +27,14 @@ In order to load the dependency libraries properly, you must configure this proj
 * Open the `pom.xml` file in the `loader` project.  Find the version number for the project and copy it.
 * Open the `pom.xml` in the `lucee-debug` project and paste the lucee version number into the `lucee.project.version` property
 
-**Jetty instructions:**
+### Jetty instructions:
 
 Jetty is extremely simple to get started, however, it dumps all the config into your project.  To combat this, I've included .gitignore entries to keep all the extra junk from being accidentally committed.
 
  * **Step 3:**
    * Right-click on the project, and select *Debug As > Run with Jetty*
    
-**Tomcat instructions:**
+### Tomcat instructions:
 
 Tomcat is a bit more setup, but it deploys your code outside the project folder for runtime, and auto-syncs the files, keeping your project a bit cleaner.
 
