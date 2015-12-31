@@ -17,8 +17,8 @@
     <servlet-name>CFMLServlet</servlet-name>
     <servlet-class>lucee.debug.loader.servlet.CFMLServlet</servlet-class>
     <init-param>
-    	<param-name>lucee-server-directory</param-name>
-    	<param-value>src/main/webapp/WEB-INF</param-value>
+      <param-name>lucee-server-directory</param-name>
+      <param-value>src/main/webapp/WEB-INF</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
@@ -27,6 +27,15 @@
     <url-pattern>*.cfm</url-pattern>
     <url-pattern>*.cfc</url-pattern>
     <url-pattern>*.cfml</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LuceeServlet</display-name>
+    <servlet-name>LuceeServlet</servlet-name>
+    <servlet-class>lucee.debug.loader.servlet.LuceeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LuceeServlet</servlet-name>
     <url-pattern>*.lucee</url-pattern>
   </servlet-mapping>
 </web-app>

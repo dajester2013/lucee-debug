@@ -349,4 +349,6 @@ for every argument defined lucee tries to call a matching setter method
 		<logger appender="resource" appender-arguments="path:{lucee-config}/logs/datasource.log" layout="classic" name="datasource"/>
 	</logging>
 	
+	<compiler allow-lucee-dialect="true" />
+	
 <datasource/><extensions/><jdbc><driver bundle-name="jtds" bundle-version="1.2.5" class="net.sourceforge.jtds.jdbc.Driver" label="jTDS (MSSQL,Sybase)"/><driver bundle-name="microsoft.sqljdbc" bundle-version="4.0.0" class="com.microsoft.sqlserver.jdbc.SQLServerDriver" label="Microsoft SQL Server (Vendor Microsoft)"/><driver bundle-name="postgresql" bundle-version="9.1.902" class="org.postgresql.Driver" label="PostgreSQL"/></jdbc></cfLuceeConfiguration>
