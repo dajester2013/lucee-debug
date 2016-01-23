@@ -6,7 +6,7 @@
   <packaging>war</packaging>
   
   <properties>
-  	<lucee.project.version>5.0.0.153-SNAPSHOT</lucee.project.version>
+  	<lucee.project.version>5.0.0.158-SNAPSHOT</lucee.project.version>
   </properties>
   
   <build>
